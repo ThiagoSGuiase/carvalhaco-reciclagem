@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import styles from '../../styles/Post.module.css';
-import BlockContent from '@sanity/block-content-to-react';
 import { Menu } from '../../components/menu';
 import { MenuMobile } from '../../components/menuMobile';
 import { Footer } from '../../components/footer';
@@ -24,7 +23,6 @@ export const Post = () => {
           <span>{author}</span>
         </div>
         <div className={styles.body}>
-          <BlockContent blocks={body} />
         </div>
       </div>
       <Footer />
