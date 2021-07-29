@@ -17,7 +17,7 @@ export default function Contato() {
       if (!field.name) return;
       formData[field.name] = field.value;
     });
-    await fetch('../pages/api/mail', {
+    await fetch('/pages/api/mail', {
       method: 'post',
       body: JSON.stringify(formData)
     })
