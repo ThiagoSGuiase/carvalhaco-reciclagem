@@ -28,7 +28,7 @@ export const Post = ({ title, body, desc, image, date, author }) => {
       <MenuMobile />
       <div className={styles.main}>
         <h1>{title}</h1>
-        {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
+        {/* {imageUrl && <img className={styles.mainImage} src={imageUrl} />} */}
         <div className={styles.postInfo}>
           <span>{new Date(date).toLocaleDateString()}</span>
           <span>{author}</span>
