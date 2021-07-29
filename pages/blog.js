@@ -4,15 +4,13 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 
-import imageUrlBuilder from '@sanity/image-url';
-
 import { Menu } from '../components/menu';
 import { Footer } from '../components/footer';
 import { MenuMobile } from '../components/menuMobile';
 
 import styles from '../styles/BlogPage.module.css';
 
-export default function Blog ({ posts }){
+export default function Blog (){
 
   return (
     <div className={styles.pageBlog}>
@@ -26,7 +24,7 @@ export default function Blog ({ posts }){
       <div className={styles.blog}>
         <div className={styles.blogContent}>
           <div className={styles.pageFeed}>
-            {mappedPosts.length ? mappedPosts.map((p, index) => (
+            {/* {mappedPosts.length ? mappedPosts.map((p, index) => (
               <div onClick={() => router.push(`/post/${p.slug.current}`)} key={p.title} className={styles.post}>              
                 <Image src={p.mainImage} className={styles.mainImage} width={350} height={350} />
                 <div className={styles.cardTxt}>
@@ -39,7 +37,7 @@ export default function Blog ({ posts }){
                   <p>{p.desc.length > 150 ? p.desc.substr(0, 150) + "..." : p.desc}</p>
                 </div>
               </div>
-            )) : <>No Posts Yet</>}
+            )) : <>No Posts Yet</>} */}
           </div>
         </div>
       </div>
@@ -47,22 +45,3 @@ export default function Blog ({ posts }){
     </div>
   )
 }
-
-export const getServerSideProps = async pageContext => {
-  const query = encodeURIComponent('*[ _type == "post"]');
-  const url = `https://uwk4dif1.api.sanity.io/v1/data/query/production?query=${query}`;
-  const result = await fetch(url).then(res => res.json());
-  if (!result.result || !result.result.length){
-    return {
-      props: {
-        posts: [],
-      }
-    }
-  } else {
-    return {
-      props: {
-        posts: result.result,
-      }
-    }
-  }
-};
