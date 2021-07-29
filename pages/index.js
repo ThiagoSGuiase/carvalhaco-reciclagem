@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import BlogSection from '../components/BlogSection'
+import { getAllPostagems} from '../lib/dato-cms'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({postagens}) {
+  console.log(postagens)
   return (
     <div className={styles.container}>
       <Head>
@@ -16,6 +19,8 @@ export default function Home() {
           CARVALHAÇO
         </h1>
       </main>
+      
+          <BlogSection postagens={postagens} />
 
       <footer className={styles.footer}>
         <a
@@ -32,3 +37,14 @@ export default function Home() {
     </div>
   )
 }
+
+export const getStaticProps = async () => {
+  const postagens = await getAllPostagems();
+
+  return {
+    props: {
+      postagens,
+    },
+    revalidate: 120,
+  };
+};
