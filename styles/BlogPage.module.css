@@ -20,10 +20,14 @@
   transform: scale(1.01);
   box-shadow: 0 5px 10px rgba(0,0,0,.5);
 }
+.pageBlog .post img {
+  max-width: 440px;
+}
 .pageBlog .postImg {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: #FFFFFF;
+  object-fit: cover;
 }
 .pageBlog .cardTxt {
   padding: 1rem 2rem 1rem;
