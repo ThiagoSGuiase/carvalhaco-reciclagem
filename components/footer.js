@@ -65,10 +65,10 @@ export const Footer = () => {
       <div className={styles.footerRowTwo}>
         <p>® Carvalhaço 2021, Todos os direitos Reservados | Desenvolvido por Agência Guia-se Marketing Digital</p>
         <div className={styles.socialMediaFooter}>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/carvalhacoreciclagem/" target="_blank" rel="noreferrer">
               <FaFacebookF />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/carvalhacoreciclagem_oficial/" target="_blank" rel="noreferrer">
               <FaInstagram />
           </a>
         </div>
