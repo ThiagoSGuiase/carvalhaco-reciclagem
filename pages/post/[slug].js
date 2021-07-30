@@ -15,7 +15,7 @@ function Posts({ post }){
             <Image src={post.image.url} alt={post.title} width={500} height={500}/>
           </figure>
           <div className={styles.postInfosBottom}>
-            <p>{post.author}</p>
+            <p>Por: {post.author}</p>
             <p>{post.category}</p>
           </div>
         </div>

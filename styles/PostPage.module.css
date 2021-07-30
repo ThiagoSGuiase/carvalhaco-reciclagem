@@ -13,6 +13,9 @@
   margin-top: 0;
 }
 
+.postImg {
+  margin: 10px 0;
+}
 .postTxt {
   text-align: justify;
   line-height: 2;
@@ -30,7 +33,8 @@
 }
 .postInfosBottom {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
   color: #0E448D;
 }
 .postInfosBottom p {
