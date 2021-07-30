@@ -19,7 +19,7 @@ export const EmpresaSection = () => {
             </button>
           </Link>
         </div>
-        <Image className={styles.imageEmpresa} src={EmpresaHome} />
+        <Image className={styles.imageEmpresa} src={EmpresaHome} alt="Ferro velho"/>
       </div>
     </div>
 

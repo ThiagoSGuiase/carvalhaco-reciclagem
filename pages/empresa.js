@@ -20,7 +20,7 @@ export default function Empresa() {
       <MenuMobile />
       <div className={styles.empresaContent}>
         <div className={styles.empresaBanner}>
-          <Image src={BannerEmpresa} />
+          <Image src={BannerEmpresa} alt="Banner da Carvalhaço" />
         </div>
         <div className={styles.empresaTxt}>
           <div className={styles.empresaTxtContent}>

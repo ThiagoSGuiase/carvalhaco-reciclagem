@@ -21,7 +21,7 @@ export const MenuMobile = () => {
         <div className={styles.menuMobile}>
           <Link href="/">
             <a>
-              <Image className={styles.logoHeader} src={logoNav} />
+              <Image className={styles.logoHeader} src={logoNav} alt="logo da Carvalhaço"/>
             </a>
           </Link>
           <span

@@ -12,7 +12,7 @@ export const Footer = () => {
       <div className={styles.footerRowOne}>
         <p>Há mais de 19 anos no mercado a Carvalhaço Reciclagem atua no ramo de compra e venda de materiais recicláveis e seus serviços.</p>
         <div className={styles.footerNav}>
-          <Image src={WhiteLogo} />
+          <Image src={WhiteLogo} alt="Logo da Carvalhaço" />
           <ul>
             <Link href="/">
               <a>

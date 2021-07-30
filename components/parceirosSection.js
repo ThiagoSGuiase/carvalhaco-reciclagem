@@ -15,12 +15,12 @@ export const Parceiros = () => {
     <div className={styles.parceirosSection}>
       <h2>Parceiros</h2>
       <div className={styles.parceirosLogos}>
-        <Image src={Arcelor} />
-        <Image src={Empa} />
-        <Image src={Gerdau} />
-        <Image src={Vap} />
-        <Image src={Palladium} />
-        <Image src={Amado} />
+        <Image src={Arcelor} alt="logo da Arcelor Mittal"/>
+        <Image src={Empa} alt="logo da Empa Grupo Teixeira Duarte" />
+        <Image src={Gerdau} alt="logo da Gerdau" />
+        <Image src={Vap} alt="logo da Vap Ambiental" />
+        <Image src={Palladium} alt="logo da Palladium Hotel Group" />
+        <Image src={Amado} alt="logo da Amado" />
       </div>
       <div className={styles.faleConosco}>
         <h3>Fale conosco</h3>

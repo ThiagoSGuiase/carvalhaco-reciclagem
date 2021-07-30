@@ -1,9 +1,5 @@
-import { useState, useEffect } from 'react';
-
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 import { MenuMobile } from '../components/menuMobile';
 import { EmpresaSection } from '../components/empresaSection';
@@ -13,7 +9,6 @@ import { ServicesHome } from '../components/servicesSection';
 import { Parceiros } from '../components/parceirosSection';
 
 import BannerImage from '../assets/banner-home.jpg';
-import ImageLogo from '../assets/carvalhaco-logo-2.jpg';
 
 import styles from '../styles/Home.module.css';
 

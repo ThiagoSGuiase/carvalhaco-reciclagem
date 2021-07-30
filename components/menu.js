@@ -14,7 +14,7 @@ export const Menu = (prop) => {
       <div className={styles.headerContent}>
         <Link href="/">
           <a>
-            <Image className={styles.logoHeader} src={logoNav} />
+            <Image className={styles.logoHeader} src={logoNav}  alt="Logo da Carvalhaço"/>
           </a>
         </Link>
         <nav className={styles.nav}>
