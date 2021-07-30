@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import { Menu } from '../components/menu';
 import { MenuMobile } from "../components/menuMobile";
 import { BiLeftArrowAlt } from 'react-icons/bi';
 import { Footer } from "../components/footer";
@@ -15,7 +14,6 @@ export default function Obrigado(){
         <title>Carvalhaço Reciclagem - Obrigado!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Menu />
       <MenuMobile />
       <main>
         <h1>Obrigado por enviar seu e-mail!</h1>

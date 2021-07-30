@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
 import router, { useRouter } from "next/router";
-import { Menu } from "../components/menu";
 import { MenuMobile } from "../components/menuMobile";
 import { Footer } from '../components/footer';
 import styles from '../styles/Contato.module.css';
@@ -15,7 +14,6 @@ export default function Contato() {
         <title>Carvalhaço Reciclagem - Contato</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Menu />
       <MenuMobile />
       <form className={styles.form} action="https://formsubmit.co/carvalhaco.forms@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false" />

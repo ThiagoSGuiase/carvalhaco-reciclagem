@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-import { Menu } from '../components/menu';
 import { Footer } from '../components/footer';
 import { MenuMobile } from '../components/menuMobile';
 
@@ -18,7 +17,6 @@ export default function Empresa() {
         <title>Carvalhaço Reciclagem - A Empresa</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Menu />
       <MenuMobile />
       <div className={styles.empresaContent}>
         <div className={styles.empresaBanner}>

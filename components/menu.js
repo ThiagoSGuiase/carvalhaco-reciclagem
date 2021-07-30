@@ -6,7 +6,7 @@ import styles from '../styles/Menu.module.css';
 
 import logoNav from '../assets/carvalhaco-logo-header.png';
 
-export const Menu = () => {
+export const Menu = (prop) => {
   const router = useRouter();
   
   return (
@@ -45,9 +45,6 @@ export const Menu = () => {
               <FaWhatsapp />
           </a>
         </div>
-        {/* <div onClick={() => router.push('/')}>Home</div>
-        <div>Twitter</div>
-        <div>Github</div> */}
       </div>
     </header>
   )

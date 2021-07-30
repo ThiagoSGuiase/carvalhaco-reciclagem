@@ -12,7 +12,7 @@ export default function BlogSection({ postagens }) {
         <h2>Nossas postagens</h2>
         <div className={styles.postsContainer}>        
           {postagens.slice( 0, 3 ).map (p => (
-              <div onClick={() => router.push(`/post/${p.slug.current}`)} className={styles.postCard} key={p.id}>
+              <div onClick={() => router.push(`/post/${p.slug}`)} className={styles.postCard} key={p.id}>
                 <Image src={p.image.url} alt={p.title} width={350} height={350} />
                 <div className={styles.postTxt}>
                   <h4>{p.title}</h4>

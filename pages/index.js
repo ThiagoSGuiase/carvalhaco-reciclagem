@@ -5,8 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-
-import { Menu } from '../components/menu';
 import { MenuMobile } from '../components/menuMobile';
 import { EmpresaSection } from '../components/empresaSection';
 import { FormHome } from '../components/homeForm';
@@ -30,7 +28,6 @@ export default function Home({postagens}) {
         <title>Carvalhaço Reciclagem</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Menu />
       <MenuMobile />
       <div className={styles.banner}>
         <Image className={styles.bannerImg} src={BannerImage} />

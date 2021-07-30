@@ -1,6 +1,5 @@
 import Head from "next/head";
 
-import { Menu } from "../components/menu";
 import { MenuMobile } from "../components/menuMobile";
 import { Footer } from "../components/footer";
 
@@ -13,7 +12,6 @@ export default function Servicos() {
         <title>Carvalhaço Reciclagem - Serviços</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Menu />
       <MenuMobile />
       <h1>Nossos Serviços</h1>
       <ul className={styles.navServices}>
