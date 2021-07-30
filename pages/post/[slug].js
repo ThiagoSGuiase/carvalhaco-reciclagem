@@ -1,6 +1,8 @@
+import Head from "next/head";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import { Footer } from "../../components/footer";
+import { MenuMobile } from "../../components/menuMobile";
 import { getAllPostagems } from "../../lib/dato-cms";
 
 import styles from '../../styles/PostPage.module.css';
@@ -8,20 +10,25 @@ import styles from '../../styles/PostPage.module.css';
 function Posts({ post }){
   return (
     <div className={styles.postPage}>
+      <Head>
+        <title>Post - {post.title}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <MenuMobile />
       <article>
         <h1 className={styles.postPastTitle}>{post.title}</h1>
         <div className={styles.postInfos}>
+          <p className={styles.postAuthor}>Por: {post.author}</p>
           <figure className={styles.postImg}>
-            <Image src={post.image.url} alt={post.title} width={500} height={500}/>
+            <Image src={post.image.url} alt={post.title} width={800} height={500}/>
           </figure>
-          <div className={styles.postInfosBottom}>
-            <p>Por: {post.author}</p>
-            <p>{post.category}</p>
-          </div>
         </div>
-        <span className={styles.postDate}>{new Date(post.datePost).toLocaleDateString()}</span>
         <div className={styles.postTxt}>
           <ReactMarkdown>{post.postContent}</ReactMarkdown>
+        </div>
+        <div className={styles.postInfosBottom}>            
+          <p>{post.category} /</p>
+          <span className={styles.postDate}>{new Date(post.datePost).toLocaleDateString()}</span>
         </div>
       </article>
       <Footer />

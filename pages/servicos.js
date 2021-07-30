@@ -15,12 +15,33 @@ export default function Servicos() {
       <MenuMobile />
       <h1>Nossos Serviços</h1>
       <ul className={styles.navServices}>
+        <li><a href="#comprasucata">Compra de Sucata</a></li>
         <li><a href="#limpafossa">Limpa Fossa</a></li>
         <li><a href="#terraplanagem">Terraplanagem</a></li>
         <li><a href="#compostagem">Compostagem</a></li>
-        <li><a href="#comprasucata">Compra de Sucata</a></li>
       </ul>
       <div className={styles.ServicesTxt}>
+        <div className={styles.servicesTxtCard} id="comprasucata">
+          <h2>Compra de sucata</h2>
+          <p>Sucata é o material que sobra em um processo de produção, ou o material que não pode mais ser utilizado para seu objetivo inicial por 
+          estar quebrado ou estragado.<br></br>
+          A maior parte dos produtos que consumimos foram projetados para serem descartados em caso de defeito, quebra ou ao final do seu ciclo 
+          de vida. Consertar ou reaproveitar algo, na maior parte dos casos, é desvantajoso que comprar um item novo.<br></br>
+          Além de ocupar um enorme espaço, prejudicar o solo e possibilitar a disseminação de doenças, esse volume de material poderia se tornar 
+          matéria-prima para ser reutilizado em novos processos de produção.<br></br>
+          Ser sobra de uma produção ou fruto de descarte não significa que o material deva ser inutilizado. Esses resíduos servem de matéria-prima 
+          ou subprodutos em outros processos produtivos, gerando diferentes itens de consumo.<br></br>
+          A sucata e seu respectivo mercado já movimenta diversos tipos de negócios de compra e venda de materiais obsoletos, ganhando cada 
+          vez mais visibilidade pela dimensão desse comércio.</p>
+          <p>Sabendo disso, a Carvalhaço abriu suas portas para a compra de:</p>
+          <ul>
+            <li>Sucata de ferro;</li>
+            <li>Sucata de aço;</li>
+            <li>Sucata de alumínio;</li>
+            <li>Sucata de cobre;</li>
+            <li>Sucata de papelão;</li>
+          </ul>
+        </div>
         <div className={styles.servicesTxtCard} id="limpafossa">
           <h2>Serviço de limpa fossa</h2>
           <p>As fossas sépticas são uma unidade de tratamento primário para o esgoto doméstico e também costumam ser encontradas em residências mais 
@@ -66,28 +87,7 @@ export default function Servicos() {
             <li>Ajuda na aeração e na habilidade de reter água e nutrientes, e soltá-los lentamente para uso das plantas ao seu redor;</li>
             <li>Melhora a drenagem nos solos argilosos e a retenção da água nos solos arenosos;</li>
           </ul>
-        </div>
-        <div className={styles.servicesTxtCard} id="comprasucata">
-          <h2>Compra de sucata</h2>
-          <p>Sucata é o material que sobra em um processo de produção, ou o material que não pode mais ser utilizado para seu objetivo inicial por 
-          estar quebrado ou estragado.<br></br>
-          A maior parte dos produtos que consumimos foram projetados para serem descartados em caso de defeito, quebra ou ao final do seu ciclo 
-          de vida. Consertar ou reaproveitar algo, na maior parte dos casos, é desvantajoso que comprar um item novo.<br></br>
-          Além de ocupar um enorme espaço, prejudicar o solo e possibilitar a disseminação de doenças, esse volume de material poderia se tornar 
-          matéria-prima para ser reutilizado em novos processos de produção.<br></br>
-          Ser sobra de uma produção ou fruto de descarte não significa que o material deva ser inutilizado. Esses resíduos servem de matéria-prima 
-          ou subprodutos em outros processos produtivos, gerando diferentes itens de consumo.<br></br>
-          A sucata e seu respectivo mercado já movimenta diversos tipos de negócios de compra e venda de materiais obsoletos, ganhando cada 
-          vez mais visibilidade pela dimensão desse comércio.</p>
-          <p>Sabendo disso, a Carvalhaço abriu suas portas para a compra de:</p>
-          <ul>
-            <li>Sucata de ferro;</li>
-            <li>Sucata de aço;</li>
-            <li>Sucata de alumínio;</li>
-            <li>Sucata de cobre;</li>
-            <li>Sucata de papelão;</li>
-          </ul>
-        </div>
+        </div>        
       </div>
       <Footer />
     </div>
