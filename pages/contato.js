@@ -9,23 +9,6 @@ import styles from '../styles/Contato.module.css';
 export default function Contato() {
   const [ loading, setLoading ] = useState(false);
 
-  // async function handleOnSubmit(e){
-  //   e.preventDefault();
-  //   setLoading(true);
-  //   const formData = {}
-  //   Array.from(e.currentTarget.elements).forEach(field => {
-  //     if (!field.name) return;
-  //     formData[field.name] = field.value;
-  //   });
-  //   await fetch('/api/mail', {
-  //     method: 'post',
-  //     body: JSON.stringify(formData)
-  //   })
-  //   router.push('/obrigado')
-
-  //   console.log(formData);
-  // }
-
   return (
     <>
       <Head>
@@ -36,7 +19,7 @@ export default function Contato() {
       <MenuMobile />
       <form className={styles.form} action="https://formsubmit.co/carvalhaco.forms@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://carvalhaco-reciclagem.vercel.app/obrigado" />
+        <input type="hidden" name="_next" value="https://www.carvalhacoreciclagem.com.br/obrigado" />
         <h1>Formulário de Contato</h1>
         <div className={styles.formContent}>
           <label htmlFor='name' className={styles.hiddenLabel}>Nome</label>

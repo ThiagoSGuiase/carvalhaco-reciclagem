@@ -1,16 +1,17 @@
-import { useState, useEffect } from 'react';
-
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import router, { useRouter } from 'next/router';
 import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
 
 import { Menu } from '../components/menu';
 import { Footer } from '../components/footer';
 import { MenuMobile } from '../components/menuMobile';
 
+import { getAllPostagems } from '../lib/dato-cms';
+
 import styles from '../styles/BlogPage.module.css';
 
-export default function Blog (){
+export default function Blog ({postagens}){
 
   return (
     <div className={styles.pageBlog}>
@@ -24,20 +25,22 @@ export default function Blog (){
       <div className={styles.blog}>
         <div className={styles.blogContent}>
           <div className={styles.pageFeed}>
-            {/* {mappedPosts.length ? mappedPosts.map((p, index) => (
-              <div onClick={() => router.push(`/post/${p.slug.current}`)} key={p.title} className={styles.post}>              
-                <Image src={p.mainImage} className={styles.mainImage} width={350} height={350} />
+            {postagens.map (p => (
+              <div onClick={() => router.push(`/post/${p.slug.current}`)} className={styles.post} key={p.id}>
+                <Image src={p.image.url} alt={p.title} width={500} height={500} className={styles.postImg}/>
                 <div className={styles.cardTxt}>
                   <h3>{p.title}</h3>
-                  <span className={styles.postDate}>{new Date(p.publishedAt).toLocaleDateString()}</span>
-                  <div className={styles.cardBottom}>                  
-                    <span>{p.catego}</span>
+                  <div className={styles.postCont}>
+                    <ReactMarkdown>{p.postContent.length > 250 ? p.postContent.substr(0, 250) + "..." : p.postContent}</ReactMarkdown>
+                  </div>
+                  <span className={styles.postDate}>{new Date(p.datePost).toLocaleDateString()}</span>
+                  <div className={styles.cardBottom}>
+                    <span>{p.category}</span>
                     <span>{p.author}</span>
                   </div>
-                  <p>{p.desc.length > 150 ? p.desc.substr(0, 150) + "..." : p.desc}</p>
                 </div>
               </div>
-            )) : <>No Posts Yet</>} */}
+            ))}
           </div>
         </div>
       </div>
@@ -45,3 +48,14 @@ export default function Blog (){
     </div>
   )
 }
+
+export const getStaticProps = async () => {
+  const postagens = await getAllPostagems();
+
+  return {
+    props: {
+      postagens,
+    },
+    revalidate: 120,
+  };
+};

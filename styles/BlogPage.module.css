@@ -20,13 +20,17 @@
   transform: scale(1.01);
   box-shadow: 0 5px 10px rgba(0,0,0,.5);
 }
-.pageBlog .mainImage {
+.pageBlog .postImg {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: #FFFFFF;
 }
 .pageBlog .cardTxt {
   padding: 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
 }
 .pageBlog .cardTxt p:last-child {
   color: #363636;
@@ -35,6 +39,20 @@
   font-size: 2rem;
   color: #0E448D;
   margin-bottom: 1rem;
+}
+.pageBlog .postCont strong,
+.pageBlog .postCont h1,
+.pageBlog .postCont h2,
+.pageBlog .postCont h3,
+.pageBlog .postCont h4 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: left;
+}
+.pageBlog .postCont p {
+  margin-top: 0;
+  font-size: 1.1rem;
 }
 .pageBlog .cardTxt .postDate {
   font-size: 0.9rem;
@@ -59,7 +77,7 @@
     max-width: 80%;
     margin: 2rem auto;
   }
-  .pageBlog .mainImage {
+  .pageBlog .postImg {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0;
@@ -68,11 +86,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
-}
-
-@media screen and (max-width: 780px){
-  .pageBlog .post {
-    max-width: 90%;
+  .pageBlog .postCont p {
+    text-align: justify;
   }
 }
