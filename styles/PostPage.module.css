@@ -1,0 +1,43 @@
+.postPage article {
+  max-width: 1300px;
+  width: 100%;
+  padding: 2rem 1rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.postPastTitle {
+  font-size: 3rem;
+  color: #0E448D;
+  margin-top: 0;
+}
+
+.postTxt {
+  text-align: justify;
+  line-height: 2;
+  color: #313131;
+}
+.postTxt h1 {
+  margin: 0;
+}
+.postTxt p {
+  margin: 5px 0;
+}
+.postInfos {
+  display: flex;
+  flex-direction: column;
+}
+.postInfosBottom {
+  display: flex;
+  justify-content: center;
+  color: #0E448D;
+}
+.postInfosBottom p {
+  margin: 0 5px 10px;
+  font-weight: bold;
+}
+.postDate {
+  color: #919191;
+  font-weight: bold;
+}
