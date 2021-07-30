@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Head from "next/head";
-import router, { useRouter } from "next/router";
 import { MenuMobile } from "../components/menuMobile";
 import { Footer } from '../components/footer';
 import styles from '../styles/Contato.module.css';

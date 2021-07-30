@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import router, { useRouter } from 'next/router';
+import router from 'next/router';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 
