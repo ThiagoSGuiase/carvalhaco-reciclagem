@@ -25,10 +25,10 @@ export default function Home({postagens}) {
       </Head>
       <MenuMobile />
       <div className={styles.banner}>
-        <Image className={styles.bannerImg} src={BannerImage} />
+        <Image className={styles.bannerImg} src={BannerImage} alt="Banner Carvalhaço"/>
       </div>
       <div className={styles.bannerMobile}>
-        <Image className={styles.bannerImgMobile} src={BannerImage} />
+        <Image className={styles.bannerImgMobile} src={BannerImage} alt="Banner Carvalhaço"/>
       </div>
       <EmpresaSection />
       <FormHome />
