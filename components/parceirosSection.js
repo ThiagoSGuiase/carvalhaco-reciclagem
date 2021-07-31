@@ -26,13 +26,13 @@ export const Parceiros = () => {
         <h3>Fale conosco</h3>
         <p>Entre em contato pelas redes sociais ou Whatsapp.</p>
         <div className={styles.faleIcons}>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/carvalhacoreciclagem/" target="_blank" rel="noreferrer">
               <FaFacebookF />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/carvalhacoreciclagem_oficial/" target="_blank" rel="noreferrer">
               <FaInstagram />
           </a>
-          <a href="https://whatsapp.com" target="_blank" rel="noreferrer">
+          <a href="https://web.whatsapp.com/send?phone=5571992103020" target="_blank" rel="noreferrer">
               <FaWhatsapp />
           </a>
         </div>
