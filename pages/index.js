@@ -31,8 +31,8 @@ export default function Home({postagens}) {
         <Image className={styles.bannerImgMobile} src={BannerImage} alt="Banner Carvalhaço"/>
       </div>
       <EmpresaSection />
-      <FormHome />
       <ServicesHome />
+      <FormHome />
       <BlogSection postagens={postagens} />
       <Parceiros />
       <Footer />

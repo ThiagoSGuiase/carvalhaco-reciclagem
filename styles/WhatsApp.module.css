@@ -1,0 +1,24 @@
+.WhatsAppPlugin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+
+  width: 70px;
+  height: 70px;
+
+  right: 2rem;
+  bottom: 2rem;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+.WhatsAppPlugin:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,.8);
+}
+.WhatsAppPlugin svg {
+  color: #ffffff;
+  font-size: 50px;
+  margin-left: 2px;
+  margin-top: 2px;
+}

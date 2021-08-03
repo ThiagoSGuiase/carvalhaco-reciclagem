@@ -3,7 +3,9 @@ import Head from "next/head";
 import { MenuMobile } from "../components/menuMobile";
 import { Footer } from "../components/footer";
 
+import BannerServicos from '../assets/banner-servicos.jpg';
 import styles from '../styles/PageServices.module.css';
+import Image from "next/image";
 
 export default function Servicos() {
   return (
@@ -13,6 +15,9 @@ export default function Servicos() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MenuMobile />
+      <div className={styles.servicosBanner}>
+        <Image src={BannerServicos} alt="Banner da Carvalhaço" />
+      </div>
       <h1>Nossos Serviços</h1>
       <ul className={styles.navServices}>
         <li><a href="#comprasucata">Compra de Sucata</a></li>

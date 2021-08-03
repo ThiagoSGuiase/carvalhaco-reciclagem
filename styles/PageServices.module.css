@@ -1,3 +1,10 @@
+.servicosBanner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.servicosBanner img {
+  margin: 0 auto;
+}
 .pageServicos h1 {
   margin: 3rem 0 1rem;
 }

@@ -113,3 +113,7 @@ a {
   transform: rotate(-135deg);
   top: -9px;
 }
+
+#__next {
+  position: relative;
+}

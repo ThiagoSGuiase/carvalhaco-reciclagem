@@ -8,6 +8,21 @@ export const ServicesHome = () => {
       <p>A Carvalhaço é especialista na prestação dos seguintes serviços:</p>
       <div className={styles.servicesHomeCont}>
         <div className={styles.servicesHomeCard}>
+            <div className={styles.servicesCardLeft}>
+              <strong>Compra de Sucata</strong>
+              <p>Sucata é o material que sobra em um processo de produção, ou o material que não pode mais ser utilizado para seu objetivo inicial por estar quebrado ou estragado.</p>
+            </div>
+            <div className={styles.servicesCardRight}>
+              <Link href="/servicos#comprasucata">
+                <a>
+                  <button>
+                    Veja Mais
+                  </button>
+                </a>
+              </Link>
+            </div>
+          </div>
+        <div className={styles.servicesHomeCard}>
           <div className={styles.servicesCardLeft}>
             <strong>Limpeza de Fossa</strong>
             <p>As fossas sépticas são uma unidade de tratamento primário para o esgoto doméstico e também costumam ser encontradas em residências mais distantes da cidade ou de zona rural, onde não tem o sistema de tratamento de esgoto.</p>
@@ -51,22 +66,7 @@ export const ServicesHome = () => {
               </a>
             </Link>
           </div>
-        </div>
-        <div className={styles.servicesHomeCard}>
-          <div className={styles.servicesCardLeft}>
-            <strong>Compra de Sucata</strong>
-            <p>Sucata é o material que sobra em um processo de produção, ou o material que não pode mais ser utilizado para seu objetivo inicial por estar quebrado ou estragado.</p>
-          </div>
-          <div className={styles.servicesCardRight}>
-            <Link href="/servicos#comprasucata">
-              <a>
-                <button>
-                  Veja Mais
-                </button>
-              </a>
-            </Link>
-          </div>
-        </div>
+        </div>        
       </div>
     </div>
   )
