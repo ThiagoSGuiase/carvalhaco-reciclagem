@@ -56,21 +56,23 @@
 .postTxt {
   background-color: #ffffff;
   padding: 0 2rem;
-  min-height: 280px;
+  min-height: 360px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 .postTxt h4 {
   color: #0E448D;
   text-align: center;
-  font-size: 1.3rem;
-  margin: 1.5rem;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  min-height: 100px;
 }
 .postTxt .postTxtCont {
   color: #313131;
   min-height: 105px;
   margin: .8rem 0;
   text-align: justify;
+  font-size: .9rem;
 }
 .postTxt .postTxtCont h1,
 .postTxt .postTxtCont h2,
@@ -87,10 +89,13 @@
 }
 .postTxt .postTxtCont p {
   margin-top: 0;
+  min-height: 100px;
+  height: 100%;
 }
 .postDate {
   font-weight: bold;
   color: #818181;
+  font-size: 0.8rem;
 }
 .postTxtBottom {
   display: flex;
@@ -104,6 +109,9 @@
   margin: 15px 5px 0;
   border-radius: 5px;
   font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1160px){

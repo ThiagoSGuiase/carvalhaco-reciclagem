@@ -22,7 +22,7 @@ export default function BlogSection({ postagens }) {
                   <span className={styles.postDate}>{new Date(p.datePost).toLocaleDateString()}</span>
                   <div className={styles.postTxtBottom}>
                     <span>{p.category}</span>
-                    <span>{p.author}</span>
+                    <span>{p.author.length > 150 ? p.author.substr(0, 150) + "..." : p.author} </span>
                   </div>
                 </div>
               </div>
