@@ -19,11 +19,7 @@ export default function BlogSection({ postagens }) {
                   <div className={styles.postTxtCont}>
                     <ReactMarkdown>{p.postContent.length > 150 ? p.postContent.substr(0, 150) + "..." : p.postContent}</ReactMarkdown>
                   </div>
-                  <span className={styles.postDate}>{new Date(p.datePost).toLocaleDateString()}</span>
-                  <div className={styles.postTxtBottom}>
-                    <span>{p.category}</span>
-                    <span>{p.author.length > 150 ? p.author.substr(0, 150) + "..." : p.author} </span>
-                  </div>
+                  <span className={styles.postDate}>{new Date(p.datePost).toLocaleDateString()}</span>                  
                 </div>
               </div>
             ))}
