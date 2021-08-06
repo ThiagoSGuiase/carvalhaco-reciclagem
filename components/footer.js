@@ -44,7 +44,7 @@ export const Footer = () => {
         <div className={styles.footerContact}>
           <div className={styles.ContactRow}>
             <BiMap />
-            <p>Rua Luiz A Nogueira ,L11 Recreio de Ipitanga, <br></br>
+            <p>Rua Luiz A Nogueira, L11, Recreio de Ipitanga, <br></br>
             Lauro de Freitas - Bahia</p>
           </div>
           <div className={styles.ContactRow}>
