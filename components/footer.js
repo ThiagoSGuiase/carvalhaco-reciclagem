@@ -44,13 +44,14 @@ export const Footer = () => {
         <div className={styles.footerContact}>
           <div className={styles.ContactRow}>
             <BiMap />
-            <p>Rua João João, Nº 999, Centro<br></br>
-            São Paulo - SP</p>
+            <p>Av Oceânica, Edf Farol Praia Center ,93 , sala 17 C<br></br>
+            Barra, Salvador-Bahia,<br></br>
+            CEP: 40.140-130</p>
           </div>
           <div className={styles.ContactRow}>
             <FaWhatsapp />
-            <p>(71) 99210-3020 / (71) 99180-3845<br></br>
-            (71) 99224-2223</p>
+            <p>(71) 9210-3020 / (71) 99224-2223<br></br>
+            (71) 99316-4252</p>
           </div>
           <div className={styles.ContactRow}>
             <HiOutlineMail />
