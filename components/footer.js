@@ -44,9 +44,8 @@ export const Footer = () => {
         <div className={styles.footerContact}>
           <div className={styles.ContactRow}>
             <BiMap />
-            <p>Av Oceânica, Edf Farol Praia Center ,93 , sala 17 C<br></br>
-            Barra, Salvador-Bahia,<br></br>
-            CEP: 40.140-130</p>
+            <p>Rua Luiz A Nogueira ,L11 Recreio de Ipitanga, <br></br>
+            Lauro de Freitas - Bahia</p>
           </div>
           <div className={styles.ContactRow}>
             <FaWhatsapp />
